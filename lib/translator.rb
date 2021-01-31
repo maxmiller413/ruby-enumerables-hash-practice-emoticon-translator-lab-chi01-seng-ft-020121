@@ -15,8 +15,10 @@ end
 
 def get_english_meaning(path, emoticon)
   load_library(path).each do |k, v|
-  
-  binding.pry
+    if v[:japanese] == emoticon 
+      return k 
+    end 
+  #binding.pry
   end 
 end
 
