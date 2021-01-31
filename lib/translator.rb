@@ -14,7 +14,7 @@ def load_library(path)
 end
 
 def get_english_meaning(path, emoticon)
-  YAML.load_file(path).each do |k, v|
+  load_library(path)
   #binding.pry
   end 
 end
