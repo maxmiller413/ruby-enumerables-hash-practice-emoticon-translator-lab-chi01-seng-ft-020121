@@ -14,9 +14,10 @@ def load_library(path)
 end
 
 def get_english_meaning(path, emoticon)
-  load_library(path)
-  #binding.pry
+  load_library(path).each do |k, v|
   
+  binding.pry
+  end 
 end
 
 def get_japanese_emoticon(path, emoticon)
